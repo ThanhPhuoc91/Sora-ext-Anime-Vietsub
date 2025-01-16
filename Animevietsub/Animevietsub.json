@@ -5,7 +5,7 @@
         "name": "Phuoc",
         "website": "https://animevietsub.page/"
     },
-    "iconURL": "https://raw.githubusercontent.com/bshar1865/MFS/refs/heads/main/assets/anivibe.jpg",
+    "iconURL": "https://cdn.animevietsub.page/data/logo/logoz.png",
     "stream": "HLS",
     "language": "Vie",
     "extractor": "dub-sub",
