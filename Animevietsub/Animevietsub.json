@@ -1,0 +1,54 @@
+{
+    "name": "Animevietsub",
+    "version": "1.0.0",
+    "author": {
+        "name": "Phuoc",
+        "website": "https://animevietsub.page/"
+    },
+    "iconURL": "https://raw.githubusercontent.com/bshar1865/MFS/refs/heads/main/assets/anivibe.jpg",
+    "stream": "HLS",
+    "language": "Vie",
+    "extractor": "dub-sub",
+    "module": [
+        {
+            "search": {
+                "url": "https://animevietsub.page/tim-kiem/",
+                "parameter": "keyword",
+                "documentSelector": "ul.MovieList li.TPostMv",
+                "title": "h2.Title",
+                "image": {
+                    "url": "div.Image img",
+                    "attribute": "src"
+                },
+                "href": "a"
+            },
+            "featured": {
+                "url": "https://animevietsub.page/anime-moi/",
+                "documentSelector": "ul.MovieList.Rows li.TPostMv",
+                "title": "h2.Title",
+                "image": {
+                    "url": "div.Image img",
+                    "attribute": "src"
+                },
+                "href": "a"
+            },
+            "details": {
+                "baseURL": "https://animevietsub.page/",
+                "aliases": {
+                    "selector": "header h1.Title",
+                    "attribute": "Text"
+                },
+                "synopsis": "header div.Description",
+                "airdate": "",
+                "stars": ""
+            },
+            "episodes": {
+                "selector": "div.server-group ul.list-episode li a",
+                "order": "reversed",
+                "video": {
+        		"attribute": "href"
+    		}
+            }
+        }
+    ]
+}
