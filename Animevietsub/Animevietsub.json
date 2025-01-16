@@ -45,9 +45,7 @@
             "episodes": {
                 "selector": "div.server-group ul.list-episode li a",
                 "order": "reversed",
-                "video": {
-        		"attribute": "href"
-    		    }
+                "pattern": ""
             }
         }
     ]
